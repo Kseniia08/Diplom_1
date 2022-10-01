@@ -97,5 +97,4 @@ public class BurgerTest {
                 "Price: 600,000000%n");
         Assert.assertEquals("Рецепт бургера - " + expected, expected, actual);
     }
-
 }
