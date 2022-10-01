@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class IngredientTests {
+public class IngredientTest {
     final String SAUCE = "sour cream";
     final int SAUCE_PRICE = 200;
 

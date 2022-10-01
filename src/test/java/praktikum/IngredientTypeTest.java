@@ -25,8 +25,9 @@ public class IngredientTypeTest {
     @Parameterized.Parameters(name = "Ingredient type: {0}")
     public static Object[][] dataForTest() {
         return new Object[][]{
-                {SAUCE, "кетчуп", 44f},
-                {FILLING, "огурчик", 222f},
+                {SAUCE, "песто", 89f},
+                {FILLING, "помидоры", 150f},
+                {FILLING, "соленый огурчик", 210f},
         };
     }
 

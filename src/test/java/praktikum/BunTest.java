@@ -1,30 +1,30 @@
 package praktikum;
 
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.mockito.junit.MockitoJUnitRunner;
 
 
-@RunWith(MockitoJUnitRunner.class)
 public class BunTest {
+    Bun bun;
 
-    @Test
-    public void getBunNameTest(){
-        Bun bun = new Bun(null, 0.0f);
-        String expectedResult = null;
-        String actualResult = bun.getName();
-
-        Assert.assertEquals("Неправильное имя булки", actualResult, expectedResult);
+    @Before
+    public void setUp() {
+        bun = new Bun("white bun", 200L);
     }
 
     @Test
-    public void getBunPriceTest() {
-        Bun bun = new Bun(null, 0.0f);
-        float expectedResult = 0.0f;
-        float actualResult = bun.getPrice();
+    public void getNameBunTest() {
+        String actual = "white bun";
+        String expected = bun.getName();
+        Assert.assertEquals("Ожидаемая булка - white bun", expected, actual);
+    }
 
-        Assert.assertEquals("Неправильное значение", expectedResult, actualResult, 0.0f);
+    @Test
+    public void getPriceBunTest() {
+        float expected = 200L;
+        float actual = bun.getPrice();
+        Assert.assertEquals("Ожидаемая цена  - 200 " + expected, expected, actual, 0);
     }
 }
 

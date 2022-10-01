@@ -6,7 +6,7 @@ import org.junit.Test;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-public class BurgerTests {
+public class BurgerTest {
     Burger burger;
 
     //Заглушка на ингредиенты

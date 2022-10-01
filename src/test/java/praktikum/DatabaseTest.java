@@ -7,7 +7,7 @@ import org.junit.Test;
 import java.util.List;
 
 
-public class DatabaseTests {
+public class DatabaseTest {
     Database database;
 
     @Before
