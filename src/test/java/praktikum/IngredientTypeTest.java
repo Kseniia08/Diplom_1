@@ -11,7 +11,6 @@ import static praktikum.IngredientType.SAUCE;
 
 @RunWith(Parameterized.class)
 public class IngredientTypeTest {
-
     private final String name;
     private final IngredientType type;
     private final float price;
@@ -22,6 +21,7 @@ public class IngredientTypeTest {
         this.price = price;
     }
 
+
     @Parameterized.Parameters(name = "Ingredient type: {0}")
     public static Object[][] dataForTest() {
         return new Object[][]{
@@ -30,6 +30,7 @@ public class IngredientTypeTest {
                 {FILLING, "соленый огурчик", 210f},
         };
     }
+
 
     @Test
     public void checkIngredientType() {
