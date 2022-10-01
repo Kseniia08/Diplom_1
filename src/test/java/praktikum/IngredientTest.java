@@ -9,6 +9,7 @@ public class IngredientTest {
     final int SAUCE_PRICE = 200;
 
 
+
     Ingredient ingredient = new Ingredient(IngredientType.SAUCE, SAUCE, SAUCE_PRICE);
 
     @Test
