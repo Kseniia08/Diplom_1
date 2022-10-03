@@ -16,12 +16,14 @@ public class BunTest {
     public void setUp() {
         bun = new Bun(BUN, BUN_PRICE);
     }
+
     @Test
     public void getNameBunTest() {
         String actual = "white bun";
         String expected = bun.getName();
         Assert.assertEquals("Ожидаемая булка - white bun", expected, actual);
     }
+
     @Test
     public void getPriceBunTest() {
         float expected = 200L;
