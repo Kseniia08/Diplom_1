@@ -8,7 +8,6 @@ public class IngredientTest {
     final String SAUCE = "sour cream";
     final int SAUCE_PRICE = 200;
 
-
     Ingredient ingredient = new Ingredient(IngredientType.SAUCE, SAUCE, SAUCE_PRICE);
 
     @Test
@@ -32,3 +31,4 @@ public class IngredientTest {
         assertEquals("Тип ингридиента не совпадает", expected, actual);
     }
 }
+

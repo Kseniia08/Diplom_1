@@ -8,10 +8,8 @@ import static org.junit.Assert.assertEquals;
 import static praktikum.IngredientType.FILLING;
 import static praktikum.IngredientType.SAUCE;
 
-
 @RunWith(Parameterized.class)
 public class IngredientTypeTest {
-
     private final String name;
     private final IngredientType type;
     private final float price;
@@ -21,7 +19,7 @@ public class IngredientTypeTest {
         this.name = name;
         this.price = price;
     }
-
+    
     @Parameterized.Parameters(name = "Ingredient type: {0}")
     public static Object[][] dataForTest() {
         return new Object[][]{

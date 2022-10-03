@@ -9,7 +9,6 @@ import java.util.List;
 
 public class DatabaseTest {
     Database database;
-
     @Before
     public void setUp() {
         database = new Database();
@@ -20,7 +19,6 @@ public class DatabaseTest {
         List<Bun> buns = database.availableBuns();
         Assert.assertFalse(buns.isEmpty());
     }
-
     @Test
     public void availableIngredientsTest() {
         List<Ingredient> ingredients = database.availableIngredients();
